@@ -12,7 +12,7 @@ global.owner = [
 ]; // Numeros de owner
 
 global.mods = ['6289688403000'];
-global.prems = ['6289688403000', '6285341618530','6282325646836', '6285854663169','6285784430254', '62895380702244', '6282229430451', '6281521754126'];
+global.prems = ['6289688403000'];
 global.APIs = { // API Prefix
   xteam: 'https://api.xteam.xyz', 
   nrtm: 'https://fg-nrtm.ddns.net',
@@ -28,7 +28,7 @@ global.APIs = { // API Prefix
   ibeng : 'https://api.ibeng.tech',
     lann: 'https://api.betabotz.org'
 };
-
+//if u ask why there's so many api, bcs it's free and if the rest api down u can change with the other
 global.APIKeys = { // APIKEY here
   'https://api.xteam.xyz': 'ur api',
   'https://zenzapis.xyz': 'ur api', 
