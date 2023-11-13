@@ -1,0 +1,19 @@
+import fetch from 'node-fetch';
+import { fileType } from 'file-type';
+
+async function uploadImage(buffer) {
+  const { ext, mime } = await fileType.fromBuffer(buffer);
+  const formData = new FormData();
+  formData.append('file', buffer, { filename: `tmp.${ext}`, contentType: mime });
+
+  const response = await fetch('https://telegra.ph/upload', {
+    method: 'POST',
+    body: formData
+  });
+
+  const data = await response.json();
+  if (data.error) throw data.error;
+  return 'https://telegra.ph' + data[0].src;
+}
+
+export default uploadImage;

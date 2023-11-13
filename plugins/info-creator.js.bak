@@ -1,0 +1,19 @@
+function handler(m) {
+  const kontak1 = {
+    "displayName": 'My owner',
+    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:ᴇʀᴋᴀʜᴀᴀ\nitem1.TEL;waid=628968840300:628968840300\nitem1.X-ABLabel:\nSilahkan bertanya jika ada keperluan\nURL;My Web:https://linkbio.co/y6rsxtbase\nEMAIL;type=INTERNET,Work:riki.hadinata45@gmail.com\nEND:VCARD`
+  }
+  
+  const kontak2 = {
+    "displayName": 'y6rsxt base',
+    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;;;;\nFN:y6rsxt base\nitem1.TEL;waid=62895327491487:62895327491487\nitem1.X-ABLabel:\nJika ingin menggunakan bot ketik *.menu*\nURL;My Web:https://linkbio.co/y6rsxtbase\nEMAIL;type=INTERNET,Work:riki.hadinata45@gmail.com\nEND:VCARD`
+  }
+  
+  conn.sendMessage(m.chat, { contacts: { contacts: [kontak1, kontak2] }}, { quoted: m })
+}
+
+handler.help = ['owner', 'creator']
+handler.tags = ['info']
+handler.command = /^(owner|creator)$/i
+
+export default handler

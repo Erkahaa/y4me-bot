@@ -1,0 +1,82 @@
+import fetch from 'node-fetch';
+
+const handler = async (m, { conn, text }) => {
+  if (!text) throw `Enter the Anime Title You Want to Search!`;
+  conn.sendMessage(m.chat, { react: { text: '🕐', key: m.key }})
+  try {
+    let res = await fetch("https://api.jikan.moe/v4/anime?q=" + text);
+    if (!res.ok) throw "Not found";
+    let json = await res.json();
+    let {
+      episodes,
+      url,
+      type,
+      score,
+      rating,
+      scored_by,
+      popularity,
+      rank,
+      season,
+      year,
+      members,
+      background,
+      status,
+      duration,
+      synopsis,
+      favorites,
+    } = json.data[0];
+    let producers = json.data[0].producers
+      .map((prod) => `${prod.name} (${prod.url})`)
+      .join(", ");
+    let studio = json.data[0].studios
+      .map((stud) => `${stud.name} (${stud.url})`)
+      .join(", ");
+    let genre = json.data[0].genres
+      .map((xnuvers007) => `${xnuvers007.name}`)
+      .join(", ");
+    let judul = json.data[0].titles
+      .map((jud) => `${jud.title} [${jud.type}]`)
+      .join(", ");
+    let trailerUrl = json.data[0].trailer.url;
+
+    let animeingfo = `*-* Title : ${judul}
+*-* Episode : ${episodes}
+*-* Type : ${type}
+*-* Genre : ${genre}
+*-* Status : ${status}
+*-* Duration : ${duration}
+*-* Favorite : ${favorites}
+*-* Score : ${score}
+*-* Rating : ${rating}
+*-* Score Member : ${scored_by}
+*-* Popularity : ${popularity}
+*-* Rank : ${rank}
+*-* Season : ${season}
+*-* Release Year : ${year}
+*-* Studio : ${studio}
+*-* Trailer : ${trailerUrl}
+*-* Producer : ${producers}
+*-* Members : ${members}
+*-* URL : ${url}
+*-* Background : ${background}
+
+*Synopsis*
+${synopsis}\n\n©Kikuchanj`;
+    conn.sendFile(
+      m.chat,
+      json.data[0].images.jpg.image_url,
+      "animek.jpg",
+      `*Search Results from ${text}*\n\n` + animeingfo,
+      m,
+    );
+  } catch (error) {
+    console.log(error);
+    m.reply('🐱 Sorry, I couldn\'t process your request.');
+  }
+};
+
+handler.help = ["animeinfo <judul>"];
+handler.tags = ["anime"];
+handler.command = /^(animeinfo|anime|infoanime|nimeinfo|nime)$/i;
+
+export default handler;
