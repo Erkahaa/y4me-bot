@@ -6,8 +6,14 @@
   "directories": { "lib": "lib", "src": "src", "plugins": "plugins" },
   "scripts": { "start": "node index.js", "test": "node test.js", "test2": "nodemon index.js" },
   "keywords": ["termux-whatsapp-bot", "whatsapp-bot", "whatsapp", "js-whatsapp", "whatsapp", "y4me-bot", "y4me-bot-md", "multi-device", "MD", "baileys-md"],
-  "homepage": "https://github.com/Erkahaa/y4me-bot", "author": { "name": "Erkahaa" }, "repository": { "type": "git", "url": "git+https://github.com/Erkahaa/y4me-bot.git" }, "bugs": { "url": "https://github.com/Erkahaa/y4me-bot/issues" }, "license": "GPL-3.0-or-later", "dependencies": {
-    "@adiwajshing/keyed-db": "^0.2.4",      "@bochilteam/scraper": "^4.2.4",  "@bochilteam/scraper-sosmed": "^1.0.5", "@ibaraki-douji/pixivts": "^2.4.1", "@vitalets/google-translate-api": "^9.2.0", "@whiskeysockets/baileys": "^6.5.0", "@xct007/frieren-scraper": "^0.0.2",
+  "homepage": "https://github.com/Erkahaa/y4me-bot", "author": { "name": "Erkahaa" }, "repository": { "type": "git", "url": "git+https://github.com/Erkahaa/y4me-bot.git" }, "bugs": { "url": "https://github.com/Erkahaa/y4me-bot/issues" }, "license": "GPL-3.0-or-later", 
+"dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4", 
+"@bochilteam/scraper": "^4.2.4",  "@bochilteam/scraper-sosmed": "^1.0.5", 
+"@ibaraki-douji/pixivts": "^2.4.1", 
+"@vitalets/google-translate-api": "^9.2.0", 
+"@whiskeysockets/baileys": "^6.5.0", 
+"@xct007/frieren-scraper": "^0.0.2",
     "acrcloud": "^1.4.0",
     "api-dylux": "^1.7.2",
     "aptoide-scraper": "^1.0.1",
