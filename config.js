@@ -30,29 +30,24 @@ global.APIs = { // API Prefix
 };
 
 global.APIKeys = { // APIKEY here
-  'https://api.xteam.xyz': 'd90a9e986e18778b',
-  'https://zenzapis.xyz': '675e34de8a', 
-  'https://api.fgmods.xyz':
-pickRandom(["hyroYlhm", "MKRK6INE", "o9mei7kh"]),
-  'https://api.itsrose.life': '132fb9c3b775e293be07d8db',
-  'https://api.ordiston.xyz':'xjof2Jmh',
-  'https://api.lolhuman.xyz':'haikalgans', 
-  'https://api.arifzyn.xyz':'TkQZ6dFIxj',
-  'https://api.arifzyn.com':'O8cTbeyUDG',
-  'https://api.zahwazein.xyz':'zenzkey_bd369a939a',
-  'https://api.caliph.biz.id':'WzD8aynt',
-  'https://api.ibeng.tech':'L8RUWhe9iS'
+  'https://api.xteam.xyz': 'ur api',
+  'https://zenzapis.xyz': 'ur api', 
+  'https://api.fgmods.xyz': 'ur api',
+  'https://api.itsrose.life': 'ur api',
+  'https://api.ordiston.xyz':'ur api',
+  'https://api.lolhuman.xyz':'ur api', 
+  'https://api.arifzyn.xyz':'ur api',
+  'https://api.arifzyn.com':'ur api',
+  'https://api.zahwazein.xyz':'ur api',
+  'https://api.caliph.biz.id':'ur api',
+  'https://api.ibeng.tech':'ur api'
 };
 
 
-global.lolkey = "haikalgans"
-global.rose = "132fb9c3b775e293be07d8db"
-global.openaikey = "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"
-/*AmeApi*/ 
- global.ameapikey = "1f98ec7e4842d057d7551722f83e9ae5c59896856aa3f96d406ff8fc9185752062920fadf1df1ea71c332d3f6be2dd6fa62b7ac3d0140e40d86ba0e736135820" 
-global.lann = 'hTeZ6xhd' // https://api.betabotz.org
-global.xyro = pickRandom(["2Slwd7tDzh", "DPTXvRjK7Y", "mspBXis4lc"]) //https://api.xyroinee.xyz/
-global.botcahx = 'CbPQBOlb'
+ global.ameapikey = "ur key" 
+global.lann = 'ur key' // https://api.betabotz.org
+global.xyro = 'ur key' //https://api.xyroinee.xyz/
+global.botcahx = 'ur key'
  
 /*Random*/
 global.htjava = pickRandom(["乂", "⛶", "❏", "⫹⫺", "☰", "⎔", "✦", "⭔", "⬟", "⛊", "⚝"])
@@ -62,13 +57,13 @@ global.htki = htjava + "───『"
 /*Number*/ 
  global.nomorbot = "6285785718554" 
  global.nomorown = "6289688403000" 
- global.namebot = " y6rsxtbase " 
+ global.namebot = " y4me-bot " 
  global.nameown = "「 3sideOcd 」"
 
 // Sticker WM
-global.packname = 'y6rsxt base'; 
-global.author = 'punya erka'; 
-global.wm = '© Y6rsxtBase By 3sideOcd';
+global.packname = 'y4me-bot'; 
+global.author = 'created ny 3sideOcd'; 
+global.wm = '© y4me-bot By 3sideOcd';
 global.fgig = '▢ Ikuti saya di Instagram \nhttps://www.instagram.com/erkahaaa\n'; 
 global.dygp = 'https://chat.whatsapp.com/EMyn9jvHRtGAH2ksjU1cbB';
 global.fgsc = 'https://github.com/Erkahaa'; 
@@ -85,7 +80,7 @@ global.hwaifu = ImgWaifu()
  global.fpagedoc = PageDoc() 
  
 
-global.wait = '*⌛ _Loading..._*\n*▰▰▰▱▱▱▱▱*';
+global.wait = 'Wait a minute';
 global.rwait = '⌛';
 global.dmoji = '🤭';
 global.done = '✅';
