@@ -29,14 +29,14 @@ const voice = [
 
 const handler = async (m, { conn, args, text, command, usedPrefix, isCreator, isPrems }) => {
   const response = args.join(' ').split('|');
-  if (!args[0]) return m.reply(`Example: ${usedPrefix}${command} hallo namaku alicia`);
+  if (!args[0]) return m.reply(`Example: ${usedPrefix}${command} hallo namaku yamii`);
   conn.sendMessage(m.chat, {
     react: {
       text: '🕒',
       key: m.key,
     }
   });
-  const res = await fetch(`https://skizo.tech/api/tts-anime?text=${response[0]}&lang=english&voice=${response[1]}&speed=0.8&symbol=y&apikey=y6rsxtbase`);
+  const res = await fetch(`https://skizo.tech/api/tts-anime?text=${response[0]}&lang=english&voice=${response[1]}&speed=0.8&symbol=y&apikey=urkey`);
   const kemii = await res.json();
   conn.sendFile(m.chat, kemii.data.url, `kemii.mp3`, '', m, true);
 };

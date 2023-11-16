@@ -1,3 +1,6 @@
+/*
+Kalau kamu habis liat konsol log dam ngeliat merah di file plugin ini, tenang aja plugin ini berjalan dengan baik kok cuma salah import aja*/
+
 import { Image } from 'node-webpmux';
 
 const handler = async (m, { conn, text }) => {

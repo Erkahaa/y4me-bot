@@ -3,15 +3,38 @@
   "version": "0.0.1",
   "description": "Customizable WhatsApp Bot", "main": "index.js",
   "type": "module",
-  "directories": { "lib": "lib", 
-  "src": "src", 
-  "plugins": "plugins" },
-  "scripts": { "start": "node index.js", "test": "node test.js", "test2": "nodemon index.js" },
-  "keywords": ["termux-whatsapp-bot", "whatsapp-bot", "whatsapp", "js-whatsapp", "whatsapp", "y4me-bot", "y4me-bot-md", "multi-device", "MD", "baileys-md"],
-  "homepage": "https://github.com/Erkahaa/y4me-bot", "author": { "name": "Erkahaa" }, 
-"repository": { "type": "git", 
-  "url": "git+https://github.com/Erkahaa/y4me-bot.git" }, 
-  "bugs": { "url": "https://github.com/Erkahaa/y4me-bot/issues" }, 
+  "directories": { 
+    "lib": "lib", 
+    "src": "src", 
+    "plugins": "plugins" 
+  },
+  "scripts": { 
+    "start": "node index.js", 
+    "test": "node test.js", 
+    "test2": "nodemon index.js" 
+  },
+  "keywords": [
+    "termux-whatsapp-bot", 
+    "whatsapp-bot", 
+    "whatsapp", 
+    "js-whatsapp", 
+    "whatsapp", 
+    "y4me-bot", 
+    "y4me-bot-md", 
+    "multi-device", 
+    "MD", 
+    "baileys-md" 
+  ],
+  "homepage": "https://github.com/Erkahaa/y4me-bot", "author": { 
+    "name": "Erkahaa"
+    }, 
+    "repository": { 
+      "type": "git", 
+      "url": "git+https://github.com/Erkahaa/y4me-bot.git"
+      }, 
+  "bugs": { 
+    "url": "https://github.com/Erkahaa/y4me-bot/issues"
+    }, 
   "license": "GPL-3.0-or-later", 
 "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4", 

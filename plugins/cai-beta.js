@@ -18,7 +18,7 @@ var handler = async (m, { text, usedPrefix, command, conn }) => {
     throw 'Masukkan teks, contoh: halo siapa Anda?';
   }
 
-  const apiUrl = `https://api.betabotz.org/api/search/c-ai?prompt=${text}&char=${command}&apikey=Iky`;
+  const apiUrl = `https://api.betabotz.org/api/search/c-ai?prompt=${text}&char=${command}&apikey=urkey`;
 
   try {
     const response = await fetch(apiUrl);

@@ -17,7 +17,7 @@ const handler = async (m, { conn, args }) => {
 			url: "/sovits/inference_voice",
 			method: "POST",
 			headers: {
-				Authorization: '132fb9c3b775e293be07d8db',
+				Authorization: global.rose,
 			},
 			data: {
 				voice_id,

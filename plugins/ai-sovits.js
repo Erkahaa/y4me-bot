@@ -42,7 +42,7 @@ async function textToSpeech(text) {
     cut_text: false,
   };
 
-  const apiKey = "132fb9c3b775e293be07d8db";
+  const apiKey = global.rose;
 
   try {
     const response = await axios.post(`${baseURL}${url}`, payloads, {
