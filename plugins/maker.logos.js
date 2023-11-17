@@ -1,8 +1,8 @@
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
 	
-    let tee = `✳️ Masukkan teks pendek\n\n📌 Contoh  : *${usedPrefix + command}* NANZ`
-    let too = `✳️ Pisahkan teks dengan *+* \n\n📌 Contoh : \n*${usedPrefix + command}* fgmods *+* nanz`
+    let tee = `✳️ Masukkan teks pendek\n\n📌 Contoh  : *${usedPrefix + command}* Y4ME`
+    let too = `✳️ Pisahkan teks dengan *+* \n\n📌 Contoh : \n*${usedPrefix + command}* erka *+* y4me`
      m.react(rwait)
  let type = (command).toLowerCase()
  switch (type) {
