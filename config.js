@@ -62,7 +62,7 @@ global.htki = htjava + "───『"
 
 // Sticker WM
 global.packname = 'y4me-bot'; 
-global.author = 'created ny 3sideOcd'; 
+global.author = 'created by 3sideOcd'; 
 global.wm = '© y4me-bot By 3sideOcd';
 global.fgig = '▢ Ikuti saya di Instagram \nhttps://www.instagram.com/erkahaaa\n'; 
 global.dygp = 'https://chat.whatsapp.com/EMyn9jvHRtGAH2ksjU1cbB';
@@ -80,7 +80,7 @@ global.hwaifu = ImgWaifu()
  global.fpagedoc = PageDoc() 
  
 
-global.wait = 'Wait a minute';
+global.wait = 'Wait a minute...';
 global.rwait = '⌛';
 global.dmoji = '🤭';
 global.done = '✅';
