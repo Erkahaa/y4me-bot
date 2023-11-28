@@ -92,7 +92,7 @@ const connectionOptions = {
             version,
         printQRInTerminal: true,
         auth: state,
-        browser: ['dylux-bot', 'Safari', '3.1.0'], 
+        browser: ['y4me-bot', 'Safari', '1.0.2'], 
               patchMessageBeforeSending: (message) => {
                 const requiresPatch = !!(
                     message.buttonsMessage 
